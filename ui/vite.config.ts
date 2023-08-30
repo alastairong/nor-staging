@@ -18,10 +18,10 @@ export default defineConfig({
       vueTsc: true,
     }),
   ],
-  server: {
-    https: {
-      key: fs.readFileSync('../../localhost-key.pem'),
-      cert: fs.readFileSync('../../localhost.pem')
-    }
-  }
+  // server: {
+  //   https: {
+  //     key: fs.readFileSync('../../localhost-key.pem'),
+  //     cert: fs.readFileSync('../../localhost.pem')
+  //   }
+  // }
 })
