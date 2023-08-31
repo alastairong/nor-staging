@@ -6,9 +6,29 @@
     <div v-else>
       <div id="content" style="display: flex; flex-direction: column; flex: 1;">
         <h2>Welcome to the Nor Staging Site</h2>
-        
+
         <div v-if="IS_HOLO && !isLoggedIn">
-          <h4>Click the sign up button below to generate your keys</h4>
+
+          <p>Nor is a big believer in distributed, federated identity. That means we do not control your ID, tokens or keys - you do.</p>
+        
+          <h3>Single Sign-On Experience</h3>
+          <p>Like all other sophisticated identity systems, our Nor login allows for a SSO experience for you</p>
+          <p>that means you can use the same keys (username, password) across many applications, browsers and devices.</p>
+
+          <h3>User-Controlled Identity</h3>
+          <p>Like with Blockchain wallet solutions, the Nor identity puts the user in control since only you have your keys.</p>
+          <p>However, the Nor identity does not require you to download a wallet and step into complex and clunky infrastructure.</p>
+          <h4>It feels like a 'normal' account.</h4>
+
+          <h3>Technology</h3>
+          <p>Nor uses Holochain, Holo, and Nom technologies for its identity.</p>
+          <p>Holochain enables the network, provides key management allowing users to change their keys without losing their identity,</p>
+          <p>is low cost due to the consensus-less system and does not require individual users to pay to register their identity</p>
+          <p>Holo serves this identity through web browsers via a distributed hosting network. Nom provides the namespace layer to ensure logins are unique.</p>
+          
+          <h3>Ready to Enter the Nor Realm?</h3>
+          <p>Now you understand the system a little more, you are ready to enter the Nor realm.</p>
+          <p>Click the sign up button below to generate your keys</p>
 
           <mwc-button
             style="margin-top: 16px"
@@ -17,7 +37,7 @@
             @click="signup" 
           />
 
-          <h4>If you already have an identity, click login below to re-generate them from your email and password instead</h4>
+          <p>If you already have an identity, click Login to re-generate your keys from your email and password </p>
           <mwc-button
             style="margin-top: 16px"
             raised
