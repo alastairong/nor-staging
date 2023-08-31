@@ -44,10 +44,20 @@
             label="Login"
             @click="login" 
           />
+
+          <p>Remember that Nor cannot store these details unlike other websites that ask for email and password.</p>
+          <p>These credentials give you access to your keys which are used to safely log you in and out of the Nor platform.</p>
         </div>
         <div v-else-if="IS_HOLO && isLoggedIn">
-          <h4>You are logged in with the following agent pubKey</h4>
-          <h4> {{ agentId }}</h4>
+          <h2>Welcome to Nor</h2>
+          <h4>You are now logged in to the Nor platform with the following agent Key:</h4>
+          <br/>
+          <h2> {{ agentId }}</h2>
+          <br/>
+          <p>Any time you want to log in and out of the Nor platform you simply enter your username and password</p>
+          <p>which gives you access to your account. Nor does not store these details etc etc</p>
+          <br>
+          <p>You can now move around</p>
           <mwc-button
             style="margin-top: 16px"
             raised
